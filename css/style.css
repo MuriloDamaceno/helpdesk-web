@@ -1,0 +1,68 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+body { margin: 0; background: #f4f4f9; color: #333; }
+
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  background: #2c3e50; color: white; padding: 15px 30px;
+}
+.navbar .logo { color: white; font-size: 1.3em; font-weight: bold; }
+.navbar nav a, .navbar nav span, .navbar nav button {
+  color: white; margin-left: 15px; text-decoration: none;
+  background: none; border: none; font-size: 1em; cursor: pointer;
+}
+.navbar nav a:hover, .navbar nav button:hover { text-decoration: underline; }
+
+.container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+
+.form-box {
+  max-width: 400px; margin: 60px auto; background: white;
+  padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.form-box h1 { text-align: center; }
+.form-box label { display: block; margin-top: 12px; font-weight: bold; }
+.form-box input, .form-box select, .form-box textarea {
+  width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 4px;
+}
+.form-box button {
+  margin-top: 20px; width: 100%; padding: 10px; background: #2c3e50;
+  color: white; border: none; border-radius: 4px; cursor: pointer;
+}
+.form-box .alt-link { text-align: center; margin-top: 15px; }
+
+.erro { color: #c0392b; background: #fdecea; padding: 8px; border-radius: 4px; margin-top: 10px; }
+.sucesso { color: #27ae60; background: #eafaf1; padding: 8px; border-radius: 4px; margin-top: 10px; }
+
+.topo-lista { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.btn-primario {
+  background: #2c3e50; color: white; padding: 10px 16px; border: none;
+  border-radius: 4px; cursor: pointer; text-decoration: none; display: inline-block;
+}
+
+.lista-chamados { display: flex; flex-direction: column; gap: 12px; }
+.card-chamado {
+  background: white; padding: 18px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex; justify-content: space-between; align-items: center;
+}
+.card-chamado a { color: #2c3e50; font-weight: bold; text-decoration: none; }
+.status-badge {
+  padding: 4px 10px; border-radius: 12px; font-size: 0.85em; font-weight: bold; color: white;
+}
+.status-Aberto { background: #e67e22; }
+.status-Em-Atendimento { background: #2980b9; }
+.status-Concluido { background: #27ae60; }
+
+.detalhes-chamado { background: white; padding: 30px; border-radius: 8px; }
+.detalhes-chamado h1 { margin-top: 0; }
+
+.acoes-tecnico { margin: 20px 0; display: flex; gap: 10px; align-items: center; }
+.acoes-tecnico select, .acoes-tecnico button { padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
+.acoes-tecnico button { background: #2c3e50; color: white; border: none; cursor: pointer; }
+
+.comentarios { margin-top: 30px; }
+.comentario { background: #f4f4f9; padding: 12px; border-radius: 6px; margin-bottom: 10px; }
+.comentario .autor { font-weight: bold; font-size: 0.9em; color: #2c3e50; }
+.comentario .data { font-size: 0.8em; color: #888; }
+
+.form-comentario { display: flex; gap: 10px; margin-top: 15px; }
+.form-comentario textarea { flex: 1; padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
+.form-comentario button { background: #2c3e50; color: white; border: none; padding: 0 20px; border-radius: 4px; cursor: pointer; }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpDesk - Novo Chamado</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <span class="logo">🎧 HelpDesk</span>
+    <nav>
+      <a href="chamados.html">← Voltar</a>
+    </nav>
+  </header>
+
+  <div class="form-box">
+    <h1>Novo Chamado</h1>
+
+    <div id="mensagem"></div>
+
+    <form id="form-novo-chamado">
+      <label for="titulo">Título</label>
+      <input type="text" id="titulo" required>
+
+      <label for="descricao">Descrição</label>
+      <textarea id="descricao" rows="4" required></textarea>
+
+      <button type="submit">Abrir Chamado</button>
+    </form>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/chamados.js"></script>
+</body>
+</html> 
